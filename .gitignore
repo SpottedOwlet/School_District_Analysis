@@ -1,5 +1,4 @@
 # Byte-compiled / optimized / DLL files
-*.DS_Store
 __pycache__/
 *.py[cod]
 *$py.class
@@ -25,6 +24,10 @@ pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
+
+# .DS_Store
+.DS_Store
+
 *.egg
 MANIFEST
 
