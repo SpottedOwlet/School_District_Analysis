@@ -63,7 +63,7 @@ The school summary groups all the school data for the schools and summarizes all
   4. How replacing ninth grader scores affectes the following 4 analyses:
     
 - Math and reading scores by grade
-<p>Thomas High School 9th grade scores were replaced by NaN. It can be observed in the image below.
+<p>The scores for each grade are filtered individually using conditionals, to get into individual series. They are then converted to a dataframe passing them through a dictionary. Due to dishonest scores, Thomas High School 9th grade scores are replaced by NaN. It can be observed in the image below. Rest of the school records and scores are unaffected.
              <p align=center>
             <kbd><img width="303" alt="Screen Shot 2021-11-18 at 3 52 04 PM" src="https://user-images.githubusercontent.com/90424752/142515058-ebfd355c-2ca5-4dc3-bdd7-52237ae88acd.png"></kbd>
             <kbd><img width="303" alt="Screen Shot 2021-11-18 at 3 52 45 PM" src="https://user-images.githubusercontent.com/90424752/142515069-c263c6ce-b2a9-47ce-a0e9-859afc96c408.png"> </kbd></p>
