@@ -30,7 +30,7 @@ district_summary_df
 Multiple columns for the district_summary_df are individually calculated and then are created into a dataframe by passing them into a dictionary, column names as keys and calculated series as columns.The district_summary_df above, displays the values before removing the 9th grader Thomas high School data. The  district_summary_df_challenge shown below displays the values after removing the fraudulent data.
 
 <p>
-After removing the data for 9th graders from Thomas high school, the Average Math Score (- 0.1% ), Percentage of students passing Math (- 0.2%) , Percentage of students passing Reading (- 0.3%) and Overall Passing percentage (- 0.1%) slightly dropped. This is because, 9th graders from Thomas high School only made up a small fraction of the total number of students.
+After removing the data for 9th graders from Thomas high school, slight drop in Average Math Score (- 0.1% ), Percentage of students passing Math (- 0.2%) , Percentage of students passing Reading (- 0.3%) and Overall Passing percentage (- 0.1%) is observed. This is because, 9th graders from Thomas high School only made up a small fraction of the total number of students.
 </p>
 
 <p align=center>  
@@ -63,7 +63,7 @@ The school summary groups all the school data for the schools and summarizes all
   4. How replacing ninth grader scores affectes the following 4 analyses:
     
 - Math and reading scores by grade
-<p>Math and reading scores by grade for both analyses were same except for the later part, Thomas High School 9th grade scores were replaced by NaN. It             can be observed in the image below.
+<p>Thomas High School 9th grade scores were replaced by NaN. It can be observed in the image below.
              <p align=center>
             <kbd><img width="303" alt="Screen Shot 2021-11-18 at 3 52 04 PM" src="https://user-images.githubusercontent.com/90424752/142515058-ebfd355c-2ca5-4dc3-bdd7-52237ae88acd.png"></kbd>
             <kbd><img width="303" alt="Screen Shot 2021-11-18 at 3 52 45 PM" src="https://user-images.githubusercontent.com/90424752/142515069-c263c6ce-b2a9-47ce-a0e9-859afc96c408.png"> </kbd></p>
@@ -92,10 +92,11 @@ The school summary groups all the school data for the schools and summarizes all
        
 
 <h3><p align=center> Summary </p></h3>
-Replacing the reading and math scores for the ninth grade at Thomas High School with NaNs mostly affected the Thomas High School Scores in the School District Summary analysis. The analyses such as 
+Replacing the reading and math scores for the ninth grade at Thomas High School with NaNs mostly affected the Thomas High School Scores in the School District Summary analysis.
 The following changes can be observed after reading and math scores for the ninth grade at Thomas High School are replaced with NaNs.
 
 - The Average Math Score for Thomas High School decreased from 83.418349 to 83.350937
 - The Average Reading Score for Thomas High School went up from 83.84893 to 83.896082
 - The percentage of students passing in mathematics decreased by 0.1% from 93.272 to 93.185 and percentages of students passing in reading decreased by 0.3%
 - The overall passing percentage was affected by almost 0.3% as well, going down to 90.63 from 90.94
+- Since the proportion of the dishonest data with the entire data in this dataset is very small i.e. about 1%, the average scores and percentages resulting after removal of dishonest data are affected by a very small amount.
