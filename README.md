@@ -71,14 +71,15 @@ The school summary groups all the school data for the schools and summarizes all
        
 - Scores by School Spending
       
-<p>The school spending summary was unaffected by the changes made as the changes were only limited to the math and reading scores. Hence the changes affected the math and reading scores and their percentages.
+<p>For this analysis, the school budget data is analyzed statistically to get some idea about the distribution of the School Budget Data. The bins are then formed so as to accommodate fairly equal numbers of schools in each spending bin. The bins are created and then the data is put into respective bins using the pandas function pd.cut. The school spending summary is unaffected by the changes made as the changes were only limited to the math and reading scores. 
+<p>By categorizing scores in spending bins, we observe that the scores for the lowest spending bins are higher than the scores for the larger spending bins and the scores for the largest spending bins are the lowest in comparison with the other three spending bins. </p>
  <img width="833" alt="spending suammry" src="https://user-images.githubusercontent.com/90424752/142579894-cb49036c-462d-4fcc-9f3c-774cc5740ddb.png">
         </p>
 
  
 - Scores by School Size
 
-<p>The scores by school size metric shows higher average scores and passing percentages for small to medium sized schools. Scores and passing percentages drop significantly for large sized (2000-5000 students) schools.
+<p>Similar to the above analysis, the dataset is categorized into three bins depending on the school size and dataset is divided into three categories using pd.cut method. The scores by school size metric shows higher average scores and passing percentages for small to medium sized schools. Scores and passing percentages drop significantly for large sized (2000-5000 students) schools.
              <p align=center>
             <kbd><img width="973" alt="size summary" src="https://user-images.githubusercontent.com/90424752/142583174-af1e1d70-66a1-449d-9cd7-472cba0f2f16.png">             </kbd>
        </p>
@@ -100,3 +101,7 @@ The following changes can be observed after reading and math scores for the nint
 - The percentage of students passing in mathematics decreased by 0.1% from 93.272 to 93.185 and percentages of students passing in reading decreased by 0.3%
 - The overall passing percentage was affected by almost 0.3% as well, going down to 90.63 from 90.94
 - Since the proportion of the dishonest data with the entire data in this dataset is very small i.e. about 1%, the average scores and percentages resulting after removal of dishonest data are affected by a very small amount.
+- Apart from this, the analysis also shows some trends depending on the parameters such as spending range, school type and school size.
+- The spending range analysis shows a negative spending range has relationship with the student scores. As spending per student increases, the scores show an approximately proportional decline.
+- The size of the school shows passing rate and scores for small to medium sized schools to be higher than that for large sized schools.
+- The passing percentages and scores were strikingly high for chartered schools than the district schools.
